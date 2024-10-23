@@ -43,7 +43,7 @@ class AriM3(PVGroup):
     # Note: the angle unit is mrad and the translation unit is mm!!!
     Ry_coarse = SubGroup(FakeMotor, velocity=1, precision=3,
                          user_limits=(-10, 10), prefix=':Ry_coarse')
-    Ry_fine = SubGroup(FakeMotor, velocity=0.1, precision=3,
+    Ry_fine = SubGroup(FakeMotor, velocity=0.01, precision=3,
                        user_limits=(-0.15, 0.15), prefix=':Ry_fine')
     Rz = SubGroup(FakeMotor, velocity=1, precision=3, user_limits=(-20, 20),
                   prefix=':Rz')

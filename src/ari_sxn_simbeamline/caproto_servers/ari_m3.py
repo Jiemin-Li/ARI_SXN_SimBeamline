@@ -45,9 +45,9 @@ class AriM3(PVGroup):
                          user_limits=(-10, 10), prefix=':Ry_coarse')
     Ry_fine = SubGroup(FakeMotor, velocity=0.01, precision=3,
                        user_limits=(-0.15, 0.15), prefix=':Ry_fine')
-    Rz = SubGroup(FakeMotor, velocity=1, precision=3, user_limits=(-20, 20),
+    Rz = SubGroup(FakeMotor, velocity=1, precision=0.1, user_limits=(-20, 20),
                   prefix=':Rz')
-    x = SubGroup(FakeMotor, velocity=1, precision=3, user_limits=(-15, 5),
+    x = SubGroup(FakeMotor, velocity=1, precision=0.1, user_limits=(-15, 5),
                  prefix=':x')
 
     # Add the mirror chamber vacuum PVs.
